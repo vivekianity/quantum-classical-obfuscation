@@ -102,7 +102,7 @@ class QCircuit:
 
             gate_idx = int(index)
             if gate_idx not in self.gate_index:
-                raise ValueError(f"Invalid key {key}. Value at index {i+1} is invalid!")
+                raise ValueError(f"Invalid key {key}. Value at index {gate_idx+1} is invalid!")
 
             gate = self.gate_index[gate_idx]
             deque.push_back((gate, qubits))
